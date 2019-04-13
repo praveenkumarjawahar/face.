@@ -11,15 +11,14 @@ public class Config_data_supply {
 	
 	public static String brow_driver;
 	Properties Pro;
+	
 	public Config_data_supply() {
 		
-	
 	File src = new File("./Config_data");
 	try {
 	FileInputStream util = new FileInputStream(src);
 	
-	 Pro = new Properties();
-	
+	Pro = new Properties();
 	Pro.load(util);
 	
 	} catch (Exception e) {
@@ -53,8 +52,7 @@ public String getchromepath() {
 public String get_url() {
 	String face_url = Pro.getProperty("UrL");
 			return face_url;
-	
-}
+	}
 
 
 
